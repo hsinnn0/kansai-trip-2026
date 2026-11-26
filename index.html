@@ -538,10 +538,7 @@
           <select id="todoCategorySelect" aria-label="選擇清單分類" class="bg-yamabuki border-[3px] border-ink rounded-2xl px-3 py-2 text-xs sm:text-sm font-bold focus:outline-none">
             <option value="prep">📋 行前準備</option>
             <option value="docs">🛂 證件票券</option>
-            <option value="items">🧣 秋楓穿搭</option>
-            <option value="items">📱 3C物品</option>
-            <option value="items">🧺 日常用品</option>
-            <option value="items">🗝️ 其他</option>
+            <option value="items">🧣 秋楓穿搭與日用品</option>
           </select>
           <div class="flex flex-1 gap-2">
             <input
@@ -843,44 +840,53 @@
         day: 4,
         shortTitle: 'D4',
         tabLabel: 'D4｜11/30 (一)',
-        themeTitle: '自由活動：大版環球影城（USJ）整日暢玩',
-        themeBadge: '樂園狂歡',
+        themeTitle: '自由活動：日本環球影城（USJ）整日暢玩',
+        themeBadge: 'USJ 整日樂園狂歡',
         items: [
           {
-            time: '07:00',
+            time: '07:15',
             title: '從 Hotel Plaza Osaka 出發前往日本環球影城',
             desc: '享用飯店早餐後出發，經十三站搭阪急至大阪梅田，轉乘 JR 夢咲線／環狀線前往「環球城站（Universal City）」。',
             transport: { label: '步行＋阪急／JR', color: 'bg-mizu' },
             icon: 'usj',
             mustGo: false,
-            tip: '備選方案：若想衝「日本環球影城 USJ」，建議 07:30 從十三站出發轉 JR 夢咲線！'
+            tip: '11/30 營業時間 9:00-20:30，建議開園前 60–90 分鐘抵達排隊入園。'
+          },
+          {
+            time: '08:45',
+            title: '超級任天堂世界™＆哈利波特的魔法世界™ 晨間衝刺',
+            desc: '趁上午人潮較少時體驗瑪利歐賽車、耀西冒險或哈利波特禁忌之旅等熱門園區與設施。',
+            transport: { label: '步行暢玩', color: 'bg-coral' },
+            icon: 'usj',
+            mustGo: true,
+            tip: '入園後立刻開啟 USJ 官方 App 確認整理券或使用 Express Pass。'
           },
           {
             time: '12:00',
-            title: '箕面瀑布秋楓 或 萬博紀念公園（彈性二選一）',
-            desc: '想繼續追楓可從十三站搭阪急寶塚線轉箕面線前往「箕面公園」賞楓吃炸楓葉天婦羅；或前往萬博紀念公園看太陽之塔。',
-            transport: { label: '阪急電鐵', color: 'bg-wakatake' },
-            icon: 'mountain',
+            title: '園區主題餐廳享用午餐',
+            desc: '可於奇諾比奧咖啡店、三根掃帚或侏羅紀公園周邊餐廳用餐，建議錯開尖峰用餐時段。',
+            transport: { label: '步行', color: 'bg-yamabuki' },
+            icon: 'bakery',
             mustGo: false,
-            tip: '十三站直接搭乘阪急寶塚線往北即可抵達石橋阪大前轉箕面線，非常順路！'
+            tip: '部分熱門主題餐廳可於當日在園區內掃碼登記候位。'
           },
           {
-            time: '16:00',
-            title: '御堂筋金黃銀杏大道＆心齋橋道頓堀購物',
-            desc: '十一月底正值大阪御堂筋銀杏全盛期！沿著金色銀杏大道散步至心齋橋、道頓堀享用大阪燒與串炸。',
-            transport: { label: '大阪地鐵御堂筋線', color: 'bg-yamabuki' },
-            icon: 'shop',
+            time: '13:30 - 18:00',
+            title: '下午園區設施暢玩＆季節限定活動／遊行',
+            desc: '依預約時段與 Express Pass 安排小小兵樂園、好萊塢美夢、蜘蛛人／動漫主題設施與現場表演。',
+            transport: { label: '步行暢玩', color: 'bg-wakatake' },
+            icon: 'show',
             mustGo: true,
-            tip: '傍晚御堂筋點燈後，金黃銀杏搭配璀璨燈飾是大阪秋季最浪漫的風景！'
+            tip: '留意各設施與表演的當日營運時間與身高限制。'
           },
           {
-            time: '20:30',
-            title: '返回 Hotel Plaza Osaka 整理戰利品行李',
-            desc: '回到飯店把四天採買的伴手禮、藥妝與衣物裝箱打包，確認護照與隨身物品。',
-            transport: { label: '大阪地鐵＋阪急電鐵', color: 'bg-mizu' },
-            icon: 'hotel',
+            time: '18:00 - 20:30',
+            title: '園區晚餐＆伴手禮店最後採購',
+            desc: '在園內或 Universal Citywalk 享用晚餐，順便逛好萊塢區大型商店挑選限定伴手禮，並搭乘 JR 返回 Hotel Plaza Osaka。',
+            transport: { label: 'JR＋阪急返飯店', color: 'bg-mizu' },
+            icon: 'shop',
             mustGo: false,
-            tip: '液體類、噴霧、果凍與超過 100ml 保養品請務必放進托運行李箱。'
+            tip: '辦理免稅請攜帶護照正本，回飯店後順便整理最後一天行李。'
           }
         ]
       },
@@ -943,7 +949,7 @@
         matcha: `<svg viewBox="0 0 40 40" class="w-8 h-8"><path d="M9 17 L31 17 L28 31 Q20 35 12 31 Z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2.6" stroke-linejoin="round"/><ellipse cx="20" cy="17" rx="11" ry="3.5" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2.4"/><path d="M16 11 Q15 8 17 6 M23 11 Q22 8 24 6" fill="none" stroke="#3E3A39" stroke-width="2.2" stroke-linecap="round"/></svg>`,
         torii: `<svg viewBox="0 0 40 40" class="w-8 h-8"><rect x="12" y="11" width="4" height="23" fill="#F2A497" stroke="#3E3A39" stroke-width="2.4"/><rect x="24" y="11" width="4" height="23" fill="#F2A497" stroke="#3E3A39" stroke-width="2.4"/><rect x="8" y="16" width="24" height="4" rx="1.5" fill="#F2A497" stroke="#3E3A39" stroke-width="2.4"/><path d="M6 9 Q20 13 34 9 L32 13 Q20 16 8 13 Z" fill="#F2A497" stroke="#3E3A39" stroke-width="2.4" stroke-linejoin="round"/></svg>`,
         shop: `<svg viewBox="0 0 40 40" class="w-8 h-8"><rect x="9" y="14" width="22" height="20" rx="4" fill="#F2A497" stroke="#3E3A39" stroke-width="2.6"/><path d="M15 14 V11 A5 5 0 0 1 25 11 V14" fill="none" stroke="#3E3A39" stroke-width="2.6"/><circle cx="20" cy="24" r="3.5" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/></svg>`,
-        usj: `<svg viewBox="0 0 40 40" class="w-8 h-8"><circle cx="20" cy="18" r="10" fill="none" stroke="#3E3A39" stroke-width="2.6"/><circle cx="20" cy="18" r="3" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/><line x1="20" y1="8" x2="20" y2="28" stroke="#3E3A39" stroke-width="2"/><line x1="10" y1="18" x2="30" y2="18" stroke="#3E3A39" stroke-width="2"/><line x1="13" y1="11" x2="27" y2="25" stroke="#3E3A39" stroke-width="2"/><line x1="27" y1="11" x2="13" y2="25" stroke="#3E3A39" stroke-width="2"/><circle cx="20" cy="8" r="2.2" fill="#F2A497" stroke="#3E3A39" stroke-width="1.8"/><circle cx="27" cy="11" r="2.2" fill="#A8D3E6" stroke="#3E3A39" stroke-width="1.8"/><circle cx="30" cy="18" r="2.2" fill="#B9DAA5" stroke="#3E3A39" stroke-width="1.8"/><circle cx="27" cy="25" r="2.2" fill="#F6D27A" stroke="#3E3A39" stroke-width="1.8"/><circle cx="20" cy="28" r="2.2" fill="#F2A497" stroke="#3E3A39" stroke-width="1.8"/><circle cx="13" cy="25" r="2.2" fill="#A8D3E6" stroke="#3E3A39" stroke-width="1.8"/><circle cx="10" cy="18" r="2.2" fill="#B9DAA5" stroke="#3E3A39" stroke-width="1.8"/><circle cx="13" cy="11" r="2.2" fill="#F6D27A" stroke="#3E3A39" stroke-width="1.8"/><path d="M14 35 L20 28 L26 35" fill="none" stroke="#3E3A39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+        usj: `<svg viewBox="0 0 40 40" class="w-8 h-8"><circle cx="20" cy="18" r="10" fill="none" stroke="#3E3A39" stroke-width="2.6"/><circle cx="20" cy="18" r="3" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/><line x1="20" y1="8" x2="20" y2="28" stroke="#3E3A39" stroke-width="2"/><line x1="10" y1="18" x2="30" y2="18" stroke="#3E3A39" stroke-width="2"/><line x1="13" y1="11" x2="27" y2="25" stroke="#3E3A39" stroke-width="2"/><line x1="27" y1="11" x2="13" y2="25" stroke="#3E3A39" stroke-width="2"/><circle cx="20" cy="8" r="2.2" fill="#F2A497" stroke="#3E3A39" stroke-width="1.8"/><circle cx="27" cy="11" r="2.2" fill="#A8D3E6" stroke="#3E3A39" stroke-width="1.8"/><circle cx="30" cy="18" r="2.2" fill="#B9DAA5" stroke="#3E3A39" stroke-width="1.8"/><circle cx="27" cy="25" r="2.2" fill="#F6D27A" stroke="#3E3A39" stroke-width="1.8"/><circle cx="20" cy="28" r="2.2" fill="#F2A497" stroke="#3E3A39" stroke-width="1.8"/><circle cx="13" cy="25" r="2.2" fill="#A8D3E6" stroke="#3E3A39" stroke-width="1.8"/><circle cx="10" cy="18" r="2.2" fill="#B9DAA5" stroke="#3E3A39" stroke-width="1.8"/><circle cx="13" cy="11" r="2.2" fill="#F6D27A" stroke="#3E3A39" stroke-width="1.8"/><path d="M14 35 L20 28 L26 35" fill="none" stroke="#3E3A39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`
       };
       return icons[type] || icons.show;
     }
